@@ -112,7 +112,7 @@
                                 </state>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="twY-MM-8Lj">
-                                <rect key="frame" x="164" y="462" width="30" height="30"/>
+                                <rect key="frame" x="164" y="454" width="30" height="30"/>
                                 <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
                                 <constraints>
                                     <constraint firstAttribute="width" secondItem="twY-MM-8Lj" secondAttribute="height" multiplier="1:1" id="vBG-o4-1Js"/>
@@ -120,6 +120,17 @@
                                 <fontDescription key="fontDescription" type="system" pointSize="40"/>
                                 <state key="normal" title="%">
                                     <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </state>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="wC6-Xx-qku">
+                                <rect key="frame" x="321" y="462" width="30" height="30"/>
+                                <color key="backgroundColor" red="0.98486075129999995" green="0.71411293919999996" blue="0.2662944552" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" secondItem="wC6-Xx-qku" secondAttribute="height" multiplier="1:1" id="Xql-Tk-ezf"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="40"/>
+                                <state key="normal" title="÷">
+                                    <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                                 </state>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="dMg-FF-5jy">
@@ -163,14 +174,6 @@
                                 </constraints>
                                 <fontDescription key="fontDescription" type="system" pointSize="40"/>
                                 <state key="normal" title="5">
-                                    <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                </state>
-                            </button>
-                            <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="xTS-5M-Met">
-                                <rect key="frame" x="172" y="552" width="30" height="30"/>
-                                <color key="backgroundColor" white="0.75" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="40"/>
-                                <state key="normal" title="6">
                                     <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 </state>
                             </button>
@@ -225,15 +228,12 @@
                                 <fontDescription key="fontDescription" type="system" pointSize="50"/>
                                 <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
                             </textView>
-                            <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="wC6-Xx-qku">
-                                <rect key="frame" x="321" y="462" width="30" height="30"/>
-                                <color key="backgroundColor" red="0.98486075129999995" green="0.71411293919999996" blue="0.2662944552" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                <constraints>
-                                    <constraint firstAttribute="width" secondItem="wC6-Xx-qku" secondAttribute="height" multiplier="1:1" id="Xql-Tk-ezf"/>
-                                </constraints>
+                            <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="xTS-5M-Met">
+                                <rect key="frame" x="164" y="552" width="30" height="30"/>
+                                <color key="backgroundColor" white="0.75" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="40"/>
-                                <state key="normal" title="÷">
-                                    <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                <state key="normal" title="6">
+                                    <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 </state>
                             </button>
                         </subviews>
@@ -301,6 +301,29 @@
                             <constraint firstItem="ttO-8W-Dfn" firstAttribute="width" secondItem="8bC-Xf-vdC" secondAttribute="width" multiplier="0.25" id="yZd-im-UQ9"/>
                         </constraints>
                     </view>
+                    <connections>
+                        <outlet property="TextView" destination="6ST-0m-8Ex" id="fFC-vg-e64"/>
+                        <outlet property="c_button" destination="JdS-v2-d7l" id="RQW-6P-bWg"/>
+                        <outlet property="dot_button" destination="B12-RP-7DH" id="pme-ub-9SD"/>
+                        <outlet property="eight_button" destination="dMg-FF-5jy" id="njH-dU-uia"/>
+                        <outlet property="equal_button" destination="yCU-4U-YzU" id="zNw-cS-gqA"/>
+                        <outlet property="five_button" destination="s50-c9-oOj" id="9U2-VF-kxQ"/>
+                        <outlet property="four_button" destination="6RP-bW-Gku" id="Qns-1h-5uA"/>
+                        <outlet property="fugou_button" destination="p7S-co-DVL" id="EnW-FW-2Rc"/>
+                        <outlet property="hiku_button" destination="bvC-Li-MMP" id="Ixx-OS-lW1"/>
+                        <outlet property="kake_button" destination="Pyp-JE-d4g" id="l2V-r6-SoU"/>
+                        <outlet property="nine_button" destination="jo6-8E-VHO" id="VGM-EN-Xhh"/>
+                        <outlet property="one_button" destination="nsY-jW-b73" id="tdt-nG-vPi"/>
+                        <outlet property="per_button" destination="twY-MM-8Lj" id="ny6-7J-pcB"/>
+                        <outlet property="seven_button" destination="ttO-8W-Dfn" id="oAW-2h-Crg"/>
+                        <outlet property="six_button" destination="xTS-5M-Met" id="zZJ-9n-Ja3"/>
+                        <outlet property="tasu_button" destination="qUk-PY-RVE" id="TJt-eO-nDC"/>
+                        <outlet property="textfield" destination="6ST-0m-8Ex" id="o1U-hH-hfN"/>
+                        <outlet property="three_button" destination="6Me-G3-VDF" id="D8B-d3-My6"/>
+                        <outlet property="two_button" destination="GUz-Ue-eRD" id="sz2-sV-aBC"/>
+                        <outlet property="waru_button" destination="wC6-Xx-qku" id="C6f-ot-Q0P"/>
+                        <outlet property="zero_button" destination="hYL-xV-mQy" id="Tfc-aa-Sm3"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
